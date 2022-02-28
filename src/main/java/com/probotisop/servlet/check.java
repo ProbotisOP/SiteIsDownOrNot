@@ -2,6 +2,7 @@ package com.probotisop.servlet;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.servlet.RequestDispatcher;
@@ -17,6 +18,7 @@ public class check extends HttpServlet {
 	public void service(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
 
 		String url = request.getParameter("site");
+		
 
 		URL u = new URL(url);
 
@@ -49,6 +51,8 @@ public class check extends HttpServlet {
 			rd.forward(request, response);
 
 		}
+		
+		
 
 	}
 }

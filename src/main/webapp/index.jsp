@@ -17,7 +17,8 @@
 	<br>
 	<center>
 		<form action="check" method="post">
-			SITE : <input type="text" name="site"> <input type="submit"
+			SITE : <input type="url" name="site" required="required" placeholder="including http/https"> 
+			<input type="submit"
 				value="submit">
 		</form>
 
